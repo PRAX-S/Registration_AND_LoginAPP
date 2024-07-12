@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="181dp"
+        android:src="@drawable/login_bottom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/signup" />
+
+        <EditText
+            android:id="@+id/signupname"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/baseline_account_circle_24"
+            android:drawablePadding="10dp"
+            android:hint="Username"
+            android:padding="10sp"
+            android:textColorHint="@color/grey" />
+
+        <EditText
+            android:id="@+id/signupemail"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:drawablePadding="10dp"
+            android:hint="Email"
+            android:padding="10sp"
+            android:textColorHint="@color/grey" />
+
+        <EditText
+            android:id="@+id/signuppass"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/baseline_password_24"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:padding="10sp"
+            android:textColorHint="@color/grey" />
+
+        <EditText
+            android:id="@+id/signupconpass"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/baseline_password_24"
+            android:drawablePadding="10dp"
+            android:hint="Confirm Password"
+            android:padding="10sp"
+            android:textColorHint="@color/grey" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="56sp"
+            android:layout_marginTop="15dp">
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTintMode="multiply"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTintMode="multiply"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:text="Female" />
+
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I AGREE ALL TERMS AND CONDITION"
+            android:textColor="@color/purple"
+            android:buttonTint="@color/purple"
+            android:layout_marginStart="56sp"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:id="@+id/registerbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="REGISTER"
+            android:textColor="@color/white"
+            android:background="@drawable/custombutton"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/loginlink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/purple"
+            android:text="Already have an account ? -LOGIN" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
